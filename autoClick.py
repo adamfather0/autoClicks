@@ -30,7 +30,10 @@ def autoClick(x=0,y=0,speed = 0):
 
 def openWeb(url=""):
     #自動打開url所指的網頁
-    driver = webdriver.Chrome("C:/Program Files (x86)/Google/Chrome/Application/chromedriver.exe")
+    try:
+        driver = webdriver.Chrome("C:/Program Files (x86)/Google/Chrome/Application/chromedriver.exe")
+    except:
+        print("Please download webdriver on https://sites.google.com/a/chromium.org/chromedriver/. Then put it in the chrome folder.")
     driver.get(url)
     driver.maximize_window()
     time.sleep(1) #休息一秒後執行其他動作，不過可以刪掉
