@@ -6,6 +6,7 @@
     * speed of Clicks (per second)
     * Duration of running time (in second)
     * Click position (in the format of (x,y))
+    * <img src="GUI.PNG" alt="drawing" width="500"/>
 * enjoy it!
 
 ## The details of the code
